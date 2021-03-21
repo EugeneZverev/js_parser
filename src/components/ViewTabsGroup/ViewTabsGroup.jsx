@@ -12,20 +12,8 @@ const ViewTabsGroup = props => {
             alignItems="center"
             spacing={1}
         >
-            <ViewTabs 
-                description='source' 
-                code={props.sourceCode} 
-                components={props.sourceComponents}
-                selectedComponent={props.selectedSourceComponent}
-                handleSelectComponent={props.selectSourceComponentHandler}
-            />
-            <ViewTabs 
-                description='base' 
-                code={props.baseCode} 
-                components={props.baseComponents}
-                selectedComponent={props.selectedBaseComponent}
-                handleSelectComponent={props.selectBaseComponentHandler}
-            />
+            <ViewTabs description='source' components={props.sourceComponents} />
+            <ViewTabs description='base' components={props.baseComponents} />
         </Grid>
     )
 }

@@ -2,8 +2,7 @@ import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import FileUploadButton from './FileUploadButton/FileUploadButton'
 
-const FileUploadButtonsGroup = props => {
-    
+const FileUploadButtonsGroup = props => { 
     return (
         <Grid
             container

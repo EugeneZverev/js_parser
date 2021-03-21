@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '@material-ui/core/Button/Button'
 import Grid from '@material-ui/core/Grid/Grid'
+import { connect } from 'react-redux'
 
 const ComponentReplaceButton = props => {
 
@@ -17,4 +18,11 @@ const ComponentReplaceButton = props => {
     )
 }
 
-export default ComponentReplaceButton
+const mapStateToProps = state => {
+    return {
+        selectedBaseComponent: state.code.selectedBaseComponent,
+        selectedSourceComponent: state.code.selectedSourceComponent
+    }
+}
+
+export default connect(mapStateToProps, null)(ComponentReplaceButton) 
